@@ -2,12 +2,13 @@
 
 <h2>Are you ready to devour the burgers?</h2>
 
-
-
-
-
-
-
+<ul>
+  {{#each burgers}}
+    {{#unless type}}
+      {{> burgers/burger-block type=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
 
 
 
