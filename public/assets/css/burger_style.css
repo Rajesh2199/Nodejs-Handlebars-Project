@@ -1,3 +1,7 @@
+body {
+  background-color: blanchedalmond;
+  background-image: url(../img/burger.jpg);
+}
 li {
   padding: 5px;
   margin: 5px;
@@ -6,6 +10,7 @@ li {
 
 .label {
   font-weight: bold;
+  
 }
 
 .create-update-form {
