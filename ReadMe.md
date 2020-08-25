@@ -8,8 +8,8 @@ This project makes use of Mysql, Node, Express, handlebars ORM concepts, and MVC
 
 
 
-## Screenshot
-![Employee Summary 1](.png)
+
+
 
 
 
