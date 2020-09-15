@@ -3,7 +3,7 @@
 	{{name}}
 
 	<button class="change-devoured" data-id="{{id}}" data-devoured="{{devoured}}">
-		{{#if devoured}}Devoured!{{else}}Burger name{{/if}}
+		{{#unless devoured}}{{burger_name}}!{{else}}{{burger_name}} {{/unless}}
 	</button>
 
 	<button class="delete-burger" data-id="{{this.id}}">Devour!</button>
