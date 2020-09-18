@@ -10,6 +10,7 @@ li {
   margin: 20px;
   text-align: center;
   color: #000;
+  
 }
 
 .label {
@@ -48,10 +49,8 @@ h2{
   font-size: 20px;
 }
 
-h3{
-  text-align: center;
-  color:wheat;
-}
+h3{ text-align: center; color:wheat; }
+
 
 .button{
   color: #000;
@@ -71,5 +70,7 @@ h3{
 
 .btn{
   text-align:center;
+  margin-top: 2%;
 }
+
 

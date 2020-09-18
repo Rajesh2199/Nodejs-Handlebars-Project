@@ -7,7 +7,7 @@ $(function() {
     var devouredState = {
       devoured: true
     };
-
+console.log(isdevoured)
     // Send the PUT request.
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
@@ -27,7 +27,7 @@ $(function() {
 
     var newBurger = {
       burger_name: $("#burger").val(),
-      devoured: $("[name=devoured]:checked").val()
+      //devoured: false
     };
 
     // Send the POST request.
@@ -48,7 +48,7 @@ $(function() {
 
     // Send the DELETE request.
     $.ajax("/api/burgers/" + id, {
-      type: "DELETE"
+      type: "PUT"
     }).then(
       function() {
         console.log("deleted burger", id);

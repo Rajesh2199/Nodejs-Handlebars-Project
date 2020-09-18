@@ -1,23 +1,29 @@
 
 
-<h2>Welcome to the burger logger.Add your burgers and devour them.</h2>
+<h2>Welcome to the burger logger.Add your burgers and click on "Devour!" to see the magic.</h2>
+
 
 <h3> Devoured</h3>
 <ul>
- 
-   {{#each burgers}}
+  
+  {{#each burgers}}
   {{#if devoured}}
-  {{> burgers/burger-block devoured = false}}
+  
+  {{> burgers/burger-block2 devoured=true}}
   {{/if}}
   {{/each}}
 </ul>
+
+
+
 
 <h3>Not Devoured yet.</h3>
 
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
+    
+  {{> burgers/burger-block devoured=false}}
     {{/unless}}
   {{/each}}
 </ul>

@@ -67,15 +67,17 @@ var orm = {
     });
   },
   // An example of objColVals would be {name: panther, sleepy: true}
-  update: function(table, objColVals, condition, cb) {
-    var queryString = "UPDATE " + table;
+  update: function(table, condition, cb) {
+  // console.log(condition.id, "Test")
+  //   var queryString = "UPDATE " + table;
 
-    queryString += " SET ";
-    queryString += objToSql(objColVals);
-    queryString += " WHERE ";
-    queryString += condition;
-
-    console.log(queryString);
+  //   queryString += " SET ";
+  //   queryString += objToSql(objColVals);
+  //   queryString += " WHERE ";
+  //   queryString += true;
+  //  // UPDATE burgers SET devoured = true WHERE id= ?
+  //   console.log(queryString);
+  let queryString = `UPDATE ${table} SET devoured = true WHERE id = ${condition.id}`
     connection.query(queryString, function(err, result) {
       if (err) {
         throw err;
