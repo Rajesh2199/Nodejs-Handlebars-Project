@@ -1,15 +1,19 @@
 *{
-  color: aliceblue;
+  color: aliceblue
 }
+
 body{
-  background-image: linear-gradient(to right, black, grey)
+   background-image: linear-gradient(to right, black,teal);
+  
 }
+
 
 li {
   padding: 5px;
-  margin: 20px;
+  margin: 30px;
   text-align: center;
   color: #000;
+  
   
 }
 
@@ -47,9 +51,9 @@ h2{
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
   font-size: 20px;
+  margin-bottom: 50px;
 }
 
-h3{ text-align: center; color:wheat; }
 
 
 .button{
@@ -59,13 +63,14 @@ h3{ text-align: center; color:wheat; }
 
 .change-devoured{
   color: #000;
- 
+  float: left;
   
 }
 
 .delete-burger {
   color: #000;
-  
+  float: left;
+  margin-left: 3px;
 }
 
 .btn{
@@ -73,4 +78,28 @@ h3{ text-align: center; color:wheat; }
   margin-top: 2%;
 }
 
+
+#right {
+  text-align: right;
+  margin-right: 80px;
+  margin-bottom: 20px;
+  color: blanchedalmond;
+  font-size: 20px;
+  
+  
+}
+
+#left{ 
+  font-size: 20px;
+  color:wheat; 
+  margin-left: 80px;
+  
+}
+
+
+.dev{
+  color: #000;
+  float: right;
+  margin-right: 29px;
+}
 

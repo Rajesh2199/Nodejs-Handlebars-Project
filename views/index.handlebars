@@ -3,21 +3,22 @@
 <h2>Welcome to the burger logger.Add your burgers and click on "Devour!" to see the magic.</h2>
 
 
-<h3> Devoured</h3>
-<ul>
-  
+<div id = "right">Devoured.</div> 
+
+  <ul>
   {{#each burgers}}
   {{#if devoured}}
   
   {{> burgers/burger-block2 devoured=true}}
   {{/if}}
   {{/each}}
-</ul>
+  </ul>
 
 
 
 
-<h3>Not Devoured yet.</h3>
+
+<div id ="left">Not Devoured yet.</div>
 
 <ul>
   {{#each burgers}}
@@ -47,4 +48,7 @@
   <div class="btn">
   <button class = "button" id= "add" type="submit">Add Burger</button>
   </div>
+ 
 </form>
+
+  
